@@ -17,25 +17,25 @@ The final score is `potential × conditions`, normalized to a 0–100 scale. Sta
 
 ## Tech Stack
 
-| Layer | Technology |
-|-------|-----------|
-| Language | Python 3.11+ |
-| Package manager | pixi (conda-forge) |
-| Geospatial | GeoPandas, Shapely, Rasterio, Fiona |
-| Database | DuckDB + spatial extension |
-| Backend | FastAPI |
-| Frontend | React + MapLibre GL JS (react-map-gl) |
-| Notebooks | Jupyter, Folium, Plotly, Matplotlib |
+| Layer           | Technology                            |
+| --------------- | ------------------------------------- |
+| Language        | Python 3.11+                          |
+| Package manager | pixi (conda-forge)                    |
+| Geospatial      | GeoPandas, Shapely, Rasterio, Fiona   |
+| Database        | DuckDB + spatial extension            |
+| Backend         | FastAPI                               |
+| Frontend        | React + MapLibre GL JS (react-map-gl) |
+| Notebooks       | Jupyter, Folium, Plotly, Matplotlib   |
 
 ## Data Sources
 
-| Layer | Source | Format |
-|-------|--------|--------|
-| Forest species | Carte forestière IGN v2 | SHP / GPKG |
-| Soil types | INRAE / GIS Sol (1:250k) | WFS / download |
-| Hydrography | BD TOPAGE (depts 38 + 73) | GPKG |
-| Relief / DEM | MNT IGN (RGE ALTI / BD ALTI) | GeoTIFF |
-| Weather | Open-Meteo or Météo-France | API |
+| Layer          | Source                       | Format         |
+| -------------- | ---------------------------- | -------------- |
+| Forest species | Carte forestière IGN v2      | SHP / GPKG     |
+| Soil types     | INRAE / GIS Sol (1:250k)     | WFS / download |
+| Hydrography    | BD TOPAGE (depts 38 + 73)    | GPKG           |
+| Relief / DEM   | MNT IGN (RGE ALTI / BD ALTI) | GeoTIFF        |
+| Weather        | Open-Meteo or Météo-France   | API            |
 
 ## Project Structure
 
@@ -92,17 +92,15 @@ make serve
 
 ## Development Phases
 
-| Phase | Focus | Status |
-|-------|-------|--------|
-| 0 | Foundations — repo setup, literature review | 🔲 |
-| 1 | Data exploration on Chartreuse (6 notebooks) | 🔲 |
-| 2 | Data pipeline & spatial joins (DuckDB) | 🔲 |
-| 3 | Scoring model for cèpe | 🔲 |
-| 4 | FastAPI backend | 🔲 |
-| 5 | React + MapLibre frontend | 🔲 |
-| 6 | Field validation & geographic scale-up | 🔲 |
-
-See [ROADMAP.md](ROADMAP.md) for detailed architecture decisions and [phases.md](phases.md) for task tracking.
+| Phase | Focus                                        | Status |
+| ----- | -------------------------------------------- | ------ |
+| 0     | Foundations — repo setup, literature review  | 🔲     |
+| 1     | Data exploration on Chartreuse (6 notebooks) | 🔲     |
+| 2     | Data pipeline & spatial joins (DuckDB)       | 🔲     |
+| 3     | Scoring model for cèpe                       | 🔲     |
+| 4     | FastAPI backend                              | 🔲     |
+| 5     | React + MapLibre frontend                    | 🔲     |
+| 6     | Field validation & geographic scale-up       | 🔲     |
 
 ## CRS Convention
 
@@ -119,4 +117,4 @@ See [ROADMAP.md](ROADMAP.md) for detailed architecture decisions and [phases.md]
 
 ## License
 
-TBD
+[GPL-3.0 license](https://github.com/valmathieu/Mycotopo#GPL-3.0-1-ov-file)
