@@ -7,4 +7,11 @@ wheels/
 *.egg-info
 
 # Virtual environments
-.venv
+.env
+# pixi environments
+.pixi/*
+!.pixi/config.toml
+# jupyter notebooks
+.ipynb_checkpoints/
+# data
+data/

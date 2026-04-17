@@ -19,7 +19,7 @@ The final score is `potential × conditions`, normalized to a 0–100 scale. Sta
 
 | Layer           | Technology                            |
 | --------------- | ------------------------------------- |
-| Language        | Python 3.11+                          |
+| Language        | Python 3.12+                          |
 | Package manager | pixi (conda-forge)                    |
 | Geospatial      | GeoPandas, Shapely, Rasterio, Fiona   |
 | Database        | DuckDB + spatial extension            |
@@ -52,7 +52,6 @@ mycotopo/
 ├── tests/
 ├── docs/
 ├── pixi.toml
-├── pyproject.toml
 ├── Makefile
 └── README.md
 ```
@@ -75,16 +74,16 @@ pixi install
 
 ```bash
 # Launch Jupyter notebooks
-make notebook
+pixi notebook
 
 # Run data pipeline (download, clip, store in DuckDB)
-make data
+pixi data
 
 # Start API server
-make api
+pixi api
 
 # Start frontend dev server
-make frontend-dev
+pixi frontend-dev
 
 # Full-stack local run (API + built frontend)
 make serve
