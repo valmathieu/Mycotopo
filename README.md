@@ -4,7 +4,7 @@ Interactive mapping application for mycological prospecting in France. Mycotopo 
 
 ## MVP Scope
 
-The MVP targets the **Chartreuse massif** (~35×15 km) with a single pilot species: **cèpe** (*Boletus edulis*). The compact, diverse terrain (beech, spruce, oak forests, 400–2000 m elevation) allows fast iteration before scaling to Savoie, then the full AURA region.
+The MVP targets the **Chartreuse massif** (~35×15 km) with a single pilot species: **cèpe** (*Boletus edulis*). The compact, diverse terrain (beech, spruce, oak forests, 400–2000 m elevation) allows fast iteration before scaling to Savoie, then the full AURA region and France.
 
 ## How It Works
 
