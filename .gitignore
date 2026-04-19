@@ -6,12 +6,16 @@ dist/
 wheels/
 *.egg-info
 
-# Virtual environments
+# Environment
 .env
+!.env.example
+
 # pixi environments
 .pixi/*
 !.pixi/config.toml
+
 # jupyter notebooks
 .ipynb_checkpoints/
+
 # data
 data/
