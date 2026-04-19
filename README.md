@@ -86,7 +86,7 @@ pixi api
 pixi frontend-dev
 
 # Full-stack local run (API + built frontend)
-make serve
+pixi serve
 ```
 
 ## Development Phases
