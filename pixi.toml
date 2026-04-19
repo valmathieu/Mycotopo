@@ -13,10 +13,27 @@ default = { solve-group = "default" }
 dev = { features = ["dev"], solve-group = "default" }
 
 [tasks]
+# Install/sync all environments. Run after pulling changes or editing pixi.toml.
+setup = "pixi install"
+
+# Launch Jupyter Lab rooted at the notebooks/ folder.
 notebook = "jupyter lab --notebook-dir=notebooks"
-lint = { cmd = "ruff check . && ruff format --check .", env = { PYTHONPATH = "src" } }
+
+[feature.dev.tasks]
+# Lint + format check (non-destructive, CI-friendly).
+lint = "ruff check . && ruff format --check ."
+
+# Auto-fix lint issues and apply formatting (destructive, for local use).
+fmt = "ruff check --fix . && ruff format ."
+
+# Static type checking on the source package.
 typecheck = "mypy src"
+
+# Run the test suite.
 test = "pytest"
+
+# Full pre-commit check: lint + typecheck + tests.
+check = { depends-on = ["lint", "typecheck", "test"] }
 
 [dependencies]
 python = "3.12.*"
