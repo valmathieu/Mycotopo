@@ -1,0 +1,10 @@
+line-length = 100
+target-version = "py312"
+
+[lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "N"]
+ignore = ["E501"]
+
+[lint.per-file-ignores]
+"notebooks/*" = ["E402", "F401"]
+"__init__.py" = ["F401"]
